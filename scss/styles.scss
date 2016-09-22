@@ -1,9 +1,35 @@
 body {
-  background-color: #ddd;
-  color: #fff;
+  background-color: #252525;
+  color: #eee;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
-  font-family: 'Helvetica', sans-serif;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+}
+
+.elapsed-time {
+  font-size: 16vw;
+  .hours, .minutes {
+    &:after {
+      content: ":";
+      margin-left: 20px;
+    }
+  }
+}
+
+.controls {
+  margin: 0 auto;
+  text-align: center;
+  button {
+    display: inline-block;
+    font-size: 50px;
+    background-color: #eee;
+    border: none;
+    padding: 5px 20px;
+    &:hover {
+      background-color: #fff;
+    }
+  }
 }
